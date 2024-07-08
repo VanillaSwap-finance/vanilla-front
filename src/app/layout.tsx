@@ -1,14 +1,12 @@
-import { Inter } from 'next/font/google'
+import { fonts } from '@/app/fonts'
 
 import type { Metadata } from 'next'
 
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
-
 export const metadata: Metadata = {
-  title: `VanillaSwap`,
-  description: 'VanillaSwap is a decentralized exchange for trading vanilla options.',
+  title: '',
+  description: 'Created with love.',
 }
 
 export default function RootLayout({
@@ -18,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={inter.className}>{children}</body>
+      <body className={fonts.chakraPetch.variable}>{children}</body>
     </html>
   )
 }
