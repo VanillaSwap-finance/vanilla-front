@@ -5,12 +5,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
 bun dev
 ```
 
@@ -19,6 +13,17 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Directory structure
+
+- components
+- features
+  - 特定の機能やドメイン専用のAPIアクセス方法、コンポーネントなどを含みます。
+  - 関心のある特定の領域にフォーカスすることで、影響範囲を限定し、管理が容易になります。
+- libs
+  - ライブラリ関連の設定などを格納します。
+- utils
+  - アプリ全体で共通して使用するユーティリティ関数を中心に格納
 
 ## Learn More
 
