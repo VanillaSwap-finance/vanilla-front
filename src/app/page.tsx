@@ -2,6 +2,14 @@ import Image from 'next/image'
 
 import styles from './page.module.css'
 
+import type { Metadata } from 'next'
+
+export function generateMetadata(): Metadata {
+  return {
+    title: 'Home - VanillaSwap',
+  }
+}
+
 export default function Home() {
   return (
     <main className={styles.main}>
